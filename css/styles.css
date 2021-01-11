@@ -1,0 +1,572 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main .shop-item-a, main .shop-item-b, main .email, main .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 40px 140px;
+}
+
+main .intro, main .book, main .gift-card, main .insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 140px;
+}
+
+main .intro div, main .book div, main .gift-card div, main .insta div {
+  width: 50%;
+}
+
+main .intro div img, main .book div img, main .gift-card div img, main .insta div img {
+  width: 100%;
+  cursor: pointer;
+}
+
+main .intro .intro-box2 h2, main .book .book-box2 h2, main .gift-card .gift-box2 h2, main .insta .insta-box2 h2, main .read-story .story-box2 h2, main .read-story .story-box3 h2, main .read-story .story-box6 h2, main .shop-item-a h2, main .shop-item-b h2, main .email h2 {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+main .read-story .story-box2 h3, main .read-story .story-box3 h3, main .read-story .story-box6 h3, main .shop-item-a h3, main .shop-item-b h3, main .email h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+main .intro .intro-box2 a, main .book .book-box2 a, main .gift-card .gift-box2 a, main .insta .insta-box2 a {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  padding: 2em 8em;
+  margin-top: 70px;
+  border: #414141 solid 1px;
+}
+
+main .intro .intro-box2, main .book .book-box2, main .gift-card .gift-box2, main .insta .insta-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+main .intro .intro-box2 p, main .book .book-box2 p, main .gift-card .gift-box2 p, main .insta .insta-box2 p {
+  text-align: center;
+  width: 460px;
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+main .intro .intro-box2 p em, main .book .book-box2 p em, main .gift-card .gift-box2 p em, main .insta .insta-box2 p em {
+  font-style: italic;
+}
+
+main .read-story .story-box2, main .read-story .story-box3, main .read-story .story-box6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3ede8;
+}
+
+main .read-story .story-box2 span, main .read-story .story-box3 span, main .read-story .story-box6 span {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 700;
+  margin-top: 6em;
+  letter-spacing: 0.2em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #414141;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 140px;
+  height: 155px;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+}
+
+header .menu button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  margin: 0 18px;
+  padding: 0;
+  letter-spacing: 2px;
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .menu button:hover {
+  opacity: 0.3;
+}
+
+header .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+}
+
+header .home img {
+  width: auto;
+  height: auto;
+}
+
+main .intro {
+  padding: 40px 0;
+}
+
+main .intro .intro-box2 {
+  background-color: #f9dbbe;
+}
+
+main .book .book-box {
+  max-width: 960px;
+}
+
+main .book .book-box2 {
+  background-color: #f3ede8;
+}
+
+main .shop-item-a .items-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .shop-item-a .item-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .shop-item-a .item-a img {
+  width: 100%;
+}
+
+main .shop-item-a .item-a .category {
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+
+main .shop-item-a .item-a .label {
+  color: #d0a121;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+
+main .shop-item-a .item-a .title {
+  font-size: 1.6em;
+  font-style: italic;
+  font-weight: 300;
+  padding: 5px 0;
+}
+
+main .shop-item-a .item-a .cost {
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  padding: 10px 0 40px 0;
+}
+
+main .shop-item-a .item-a a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: #414141 solid 1px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  padding: 15px 60px;
+}
+
+main .gift-card .gift-box {
+  max-width: 960px;
+}
+
+main .gift-card .gift-box2 {
+  background-color: #dee8e9;
+}
+
+main .shop-item-b .items-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 150px;
+}
+
+main .shop-item-b .item-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60px 0;
+}
+
+main .shop-item-b .border {
+  border-right: solid 0.1px #414141;
+  height: 180px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .shop-item-b .number {
+  font-size: 0.8em;
+  padding: 20px 0;
+  color: #414141;
+}
+
+main .shop-item-b a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: #414141 solid 1px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  padding: 15px 60px;
+}
+
+main .read-story {
+  padding: 40px 140px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (960px)[2];
+      grid-template-columns: repeat(2, 960px);
+  -ms-grid-rows: (646px)[3];
+      grid-template-rows: repeat(3, 646px);
+}
+
+main .read-story .story img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+main .email .email-box {
+  width: 650px;
+}
+
+main .email .input {
+  margin-top: 50px;
+  background-color: transparent;
+  color: #414141;
+  font-family: "freight-display-pro", "Times New Roman", serif;
+  font-size: 40px;
+  line-height: 45px;
+  padding: 20px 60px 20px 0;
+  position: relative;
+  width: calc(100% - 60px);
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #4d2929;
+}
+
+main .email button {
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border-radius: 0;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #414141;
+}
+
+main .insta .insta-box1 {
+  max-width: 960px;
+}
+
+main .insta .insta-box2 {
+  max-width: 960px;
+  background-color: #dee8e9;
+}
+
+main .insta-img {
+  padding: 40px 140px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (480px)[4];
+      grid-template-columns: repeat(4, 480px);
+  -ms-grid-rows: (480px)[2];
+      grid-template-rows: repeat(2, 480px);
+}
+
+main .insta-img .instas img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+main .follow {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+main .follow em {
+  color: #9d9d9c;
+}
+
+.footer {
+  padding: 40px 140px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f3ede8;
+  text-transform: uppercase;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  -ms-grid-columns: (640px)[3];
+      grid-template-columns: repeat(3, 640px);
+}
+
+.footer span {
+  opacity: 0.7;
+}
+
+.footer .list {
+  margin-top: 40px;
+}
+
+.footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-right: solid 1px #414141;
+}
+
+.footer .footer-box li {
+  margin-bottom: 15px;
+}

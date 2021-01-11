@@ -1,0 +1,86 @@
+// Initial box set
+%item-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 140px;
+}
+
+%box-center {
+  display: flex;
+  justify-content: center;
+  padding: 40px 140px;
+  div {
+    width: 50%;
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+%h2 {
+  h2 {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+%h3 {
+  h3 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+}
+
+%box-button {
+  a {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    padding: 2em 8em;
+    margin-top: 70px;
+    border: $black solid 1px;
+  }
+}
+
+%box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  @extend %h2;
+  p {
+    text-align: center;
+    width: 460px;
+    font-size: 31px;
+    font-weight: 300;
+    line-height: 120%;
+    em {
+      font-style: italic;
+    }
+  }
+  @extend %box-button;
+}
+
+%story {
+  @extend %h2;
+  @extend %h3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ede8;
+  span {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-top: 6em;
+    letter-spacing: 0.2em;
+  }
+}
