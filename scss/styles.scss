@@ -32,7 +32,19 @@
     img {
       max-width: 40px;
       max-height: 40px;
+      display: block;
     }
+  }
+  .fade-in {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -135,6 +147,11 @@ main {
         font-size: 0.7em;
         letter-spacing: 0.1em;
         padding: 15px 60px;
+        &:hover {
+          background: black;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -162,7 +179,6 @@ main {
     .item-b {
       display: flex;
       flex-direction: column;
-      // justify-content: space-between;
       margin: 60px 0;
     }
     .border {
@@ -182,6 +198,11 @@ main {
       font-size: 0.7em;
       letter-spacing: 0.1em;
       padding: 15px 60px;
+      &:hover {
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
   .read-story {

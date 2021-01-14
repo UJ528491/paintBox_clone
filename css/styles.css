@@ -185,6 +185,12 @@ main .intro .intro-box2 a, main .book .book-box2 a, main .gift-card .gift-box2 a
   border: #414141 solid 1px;
 }
 
+main .intro .intro-box2 a:hover, main .book .book-box2 a:hover, main .gift-card .gift-box2 a:hover, main .insta .insta-box2 a:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
 main .intro .intro-box2, main .book .book-box2, main .gift-card .gift-box2, main .insta .insta-box2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,6 +290,30 @@ main .read-story .story-box2 span, main .read-story .story-box3 span, main .read
 .new-header .home img {
   max-width: 40px;
   max-height: 40px;
+  display: block;
+}
+
+.new-header .fade-in {
+  -webkit-animation: fade-in 1s ease-in-out forwards;
+          animation: fade-in 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 header .menu {
@@ -406,6 +436,12 @@ main .shop-item-a .item-a a {
   padding: 15px 60px;
 }
 
+main .shop-item-a .item-a a:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
 main .gift-card .gift-box {
   max-width: 960px;
 }
@@ -459,6 +495,12 @@ main .shop-item-b a {
   font-size: 0.7em;
   letter-spacing: 0.1em;
   padding: 15px 60px;
+}
+
+main .shop-item-b a:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
 }
 
 main .read-story {

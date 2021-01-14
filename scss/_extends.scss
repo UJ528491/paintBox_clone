@@ -45,6 +45,11 @@
     padding: 2em 8em;
     margin-top: 70px;
     border: $black solid 1px;
+    &:hover {
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
   }
 }
 

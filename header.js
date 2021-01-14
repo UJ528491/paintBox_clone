@@ -1,16 +1,21 @@
 const header = document.querySelector("header")
-const pageYOffset = window.pageYOffset;
+const fade = header.querySelector(".new-header");
+
+
 
 window.addEventListener("scroll", responsive);
+
 function responsive(){
-  console.log(window.pageYOffset);
-  if(pageYOffset == 0){
-    header.classList.add('new-header');
-    header.classList.remove('js-header');
+  const Yoffset = window.pageYOffset;
+  if(Yoffset == 0){
+    header.classList.add('js-header');
+    header.classList.remove('fade-in');
+    header.classList.remove('new-header');
     
   } else{
-    header.classList.remove('new-header');
-    header.classList.add('js-header');
+    header.classList.remove('js-header');
+    header.classList.add('new-header');
+    header.classList.add('fade-in');
   }
 }
   
